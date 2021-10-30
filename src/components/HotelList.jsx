@@ -59,7 +59,8 @@ const HotelList = () => {
 
     return (
         <Box className={classes.container}>
-            <Navbar value={value} option={navigation} check={check} favoriteHotels={favoriteHotels} />
+                <Navbar value={value} option={navigation} check={check} favoriteHotels={favoriteHotels} />
+
            
             {
                 value === 0 ? 

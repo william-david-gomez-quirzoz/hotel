@@ -2,7 +2,7 @@ import { BottomNavigation, BottomNavigationAction, Box } from '@mui/material'
 
 const Navbar = ({ value, option, check, favoriteHotels }) => {
     return (
-        <Box sx={{ width: 500 }}>
+        <Box sx={{ width: '100%' }}>
             <BottomNavigation showLabels value={value} onChange={(event, newValue) => option(newValue)}>
                 <BottomNavigationAction label="All" />
 

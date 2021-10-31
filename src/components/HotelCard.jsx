@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import useHotelCard from '../themes/useHotelCard'
 import { pink } from '@mui/material/colors'
 
-const HotelSelected = ({ HotelList, like, favoriteHotels }) => {
+const HotelCard = ({ HotelList, like, favoriteHotels }) => {
     const classes = useHotelCard()
 
     return (
@@ -46,4 +46,4 @@ const HotelSelected = ({ HotelList, like, favoriteHotels }) => {
     )
 }
 
-export default HotelSelected
+export default HotelCard

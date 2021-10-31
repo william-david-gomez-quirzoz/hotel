@@ -4,6 +4,7 @@ import { Box } from '@mui/system'
 import { useState } from 'react'
 import useReview from '../themes/useReview'
 
+// Filter reviews by hotel id
 const hotelReview = (id, review) => {
     let hotel = []
 

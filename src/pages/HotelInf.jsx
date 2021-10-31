@@ -24,13 +24,13 @@ const HotelInf = () => {
 
     useEffect(() => {
         const request = async () => {
-            const info = await api.get(`hotels/${id}`)
+            const hotelList = await api.get(`hotels/${id}`)
 
-            const rv = await api.get('reviews')
+            const reviewList = await api.get('reviews')
 
-            setHotel(info.data)
+            setHotel(hotelList.data)
 
-            setReview(rv.data)
+            setReview(reviewList.data)
         }
 
         request()
@@ -56,9 +56,9 @@ const HotelInf = () => {
         setCheck(newChecked)
     }
 
-    const sendReview = (rv) => setListResview([...review, rv])
+    const sendReview = (newReview) => setListResview([...review, newReview])
 
-    const sendListsReviews = (rv) => setListResview([...listReviews, rv])
+    const sendListsReviews = (newReview) => setListResview([...listReviews, newReview])
 
     return (
         <div>
